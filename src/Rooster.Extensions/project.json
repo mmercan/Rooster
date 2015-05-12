@@ -7,14 +7,12 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Rooster.Model": "",
-   
     "EntityFramework.Core": "7.0.0-beta4",
-    "EntityFramework.SqlServer": "7.0.0-beta4",
-    "EntityFramework.Relational": "7.0.0-beta4",
-    
-     "Rooster.Extensions": ""
-    
+
+    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
+    "FluentValidation": "1.0.0",
+    "Rooster.Model": "",
+    "Microsoft.Framework.Caching.Memory": "1.0.0-beta4"
   },
 
   "frameworks": {
@@ -25,6 +23,7 @@
         "System.Linq": "4.0.0-beta-22816",
         "System.Threading": "4.0.10-beta-22816",
         "Microsoft.CSharp": "4.0.0-beta-22816"
+
       }
     }
   }

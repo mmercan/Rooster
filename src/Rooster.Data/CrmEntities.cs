@@ -9,9 +9,8 @@ namespace Rooster.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //optionsBuilder.UseSqlServer("Data Source=(local);Initial Catalog=AdventureWorks2014;Integrated Security=True;Connect Timeout=15");
-            //optionsBuilder.UseSqlServer("Server=tcp:me1i2aveth.database.windows.net,1433;Database=AdventureWorks2012;User ID=mmercan@me1i2aveth;Password=Pa$$w0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;");
-            optionsBuilder.UseSqlServer(
-                "Data Source=sqlcluster.fastlane-ap.com;Initial Catalog=FastLane;Persist Security Info=True;User ID=sa;Password=F@5t1@n3;MultipleActiveResultSets=True;Application Name=EntityFramework");
+            
+            optionsBuilder.UseSqlServer(ConnectionString.CrmEntities);
             base.OnConfiguring(optionsBuilder);
         }
 

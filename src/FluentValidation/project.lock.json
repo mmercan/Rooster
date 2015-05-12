@@ -3,7 +3,12 @@
   "version": -9998,
   "projectFileDependencyGroups": {
     "": [
-      "FluentValidation >= 1.0.0"
+      "System.Text.RegularExpressions >= 4.0.10-beta-22816",
+      "System.Globalization >= 4.0.10-beta-22816",
+      "System.Diagnostics.Tools >= 4.0.0-beta-22816",
+      "System.Diagnostics.Contracts >= 4.0.0-beta-22816",
+      "System.Runtime.Extensions >= 4.0.10-beta-22816",
+      "System.Diagnostics.Debug >= 4.0.10-beta-22816"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": [
@@ -16,13 +21,14 @@
   "libraries": {
     "FluentValidation/1.0.0": {
       "serviceable": false,
-      "sha": "lnhmlZFuzvVPo5QEgGs2+QWUqY8OeEvDYNq7lW/usBs22U0HVISk2KZ76/LKI7ukc+BTdp3KZY2C4L4dk1GO7w==",
+      "sha": "XndgS6rgO6UkDuQx0fDk1AOR3XZJcIi2dCGLwhoHck2x4/V+hNKA0DgVDTFOeD/dq8q4/x9yg+/jF2B9Bxvsbw==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
             "System.Text.RegularExpressions": "4.0.10-beta-22816",
             "System.Globalization": "4.0.10-beta-22816",
             "System.Diagnostics.Tools": "4.0.0-beta-22816",
+            "System.Resources.ResourceManager": "4.0.0-beta-22816",
             "System.Diagnostics.Contracts": "4.0.0-beta-22816",
             "System.Runtime.Extensions": "4.0.10-beta-22816",
             "System.Diagnostics.Debug": "4.0.10-beta-22816"
@@ -45,6 +51,7 @@
             "System.Text.RegularExpressions": "4.0.10-beta-22816",
             "System.Globalization": "4.0.10-beta-22816",
             "System.Diagnostics.Tools": "4.0.0-beta-22816",
+            "System.Resources.ResourceManager": "4.0.0-beta-22816",
             "System.Diagnostics.Contracts": "4.0.0-beta-22816",
             "System.Runtime.Extensions": "4.0.10-beta-22816",
             "System.Diagnostics.Debug": "4.0.10-beta-22816",
