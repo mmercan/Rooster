@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Rooster.Web"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Rooster.Web-9a99b8c7-ffa5-4f6c-bae6-f60949a439da;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
