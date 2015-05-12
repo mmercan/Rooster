@@ -2,11 +2,73 @@
   "name": "ASP.NET",
   "private": true,
   "dependencies": {
-    "bootstrap": "3.0.0",
-    "jquery": "1.10.2",
     "jquery-validation": "1.11.1",
     "jquery-validation-unobtrusive": "3.2.2",
     "hammer.js": "2.0.4",
-    "bootstrap-touch-carousel": "0.8.0"
+    "bootstrap-touch-carousel": "0.8.0",
+    "jquery": "~2.1.1",
+    "angular-animate": "~1.3.4",
+    "angular-cookies": "~1.3.4",
+    "angular-touch": "~1.3.4",
+    "angular-sanitize": "~1.3.4",
+    "angular-resource": "~1.3.4",
+    "angular-ui-router": "~0.2.13",
+    "bootstrap": "~3.3.4",
+    "angular-bootstrap": "0.12.x",
+    "angular": "~1.3.4",
+    "PACE": "https://github.com/HubSpot/pace.git#~1.0.2",
+    "metisMenu": "~1.1.3",
+    "font-awesome": "~4.3.0",
+    "slimScroll": "https://github.com/rochal/jQuery-slimScroll.git#~1.3.3",
+    "Angular-Directives": "https://github.com/mmercan/Angular-Directives.git",
+    "oclazyload": "^0.6.3",
+    "ng-idle": "^1.0.4",
+    "angular-bootstrap-checkbox": "https://github.com/sebastianha/angular-bootstrap-checkbox.git"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.4"
+  },
+  "resolutions": {
+    "angular": "~1.3.4",
+    "jquery": ">= 1.9.0",
+    "bootstrap": "~3.3.0"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "js": "dist/js/*.*",
+      "css": "dist/css/*.*",
+      "fonts": "dist/fonts/*.*"
+    },
+    "bootstrap-touch-carousel": {
+      "js": "dist/js/*.*",
+      "css": "dist/css/*.*"
+    },
+    "jquery": {
+      "": "jquery.{js,min.js,min.map}"
+    },
+    "hammer": {
+      "": "hammer.{js,min.js}"
+    },
+    "font-awesome": {
+      "fonts": "fonts/*.*",
+      "css": "css/*.*"
+    },
+    "jquery-ui": {
+      "": [
+        "jquery-ui.js",
+        "./themes/base/jquery-ui.css"
+      ]
+    },
+    "Angular-Directives": {
+      "": [
+        "./components*.js",
+        "./directives*.js",
+        "./css/*.css",
+        "./css/*.less",
+        "./directives.html"
+      ],
+      "templates": "./templates/*.*",
+      "Controller": "./Controller/*.*"
+    }
   }
 }

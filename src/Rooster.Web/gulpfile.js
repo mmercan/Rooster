@@ -30,3 +30,18 @@ gulp.task("copy", ["clean"], function () {
       .pipe(gulp.dest(paths.lib + destinationDir));
   }
 });
+
+
+
+gulp.paths = {
+    src: 'wwwroot',
+    dist: 'wwwroot/dist',
+    tmp: 'wwwroot/.tmp',
+    e2e: 'wwwroot/e2e'
+};
+
+require('require-dir')('./gulp');
+
+gulp.task('default', ['clean'], function () {
+    gulp.start('build');
+});
