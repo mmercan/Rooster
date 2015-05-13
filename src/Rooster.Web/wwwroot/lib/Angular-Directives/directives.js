@@ -1,4 +1,4 @@
-angular.module('directives', []);
+﻿angular.module('directives', []);
 angular.module('directives').directive('knob', function () {
     return {
         restrict: 'ACM',
@@ -805,7 +805,7 @@ angular.module("directives").directive("mmActionModal", ["$compile", function ($
                             editable: true,
                             startParam: startParam,
                             endParam:endParam,
-                            events: function (start, end, callback) {
+                            events: function (start, end,timezone, callback) {
                                 if (fetchItemsHandler) {
                                     var results = fetchItemsHandler(start, end);
                                     if (results) {

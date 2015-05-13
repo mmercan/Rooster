@@ -1,0 +1,16 @@
+﻿<div class="panel panel-aqua-dark">
+    <div class="panel-heading">{{vm.title}}</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class=" col-sm-1">
+                <img style="width: 100%" ng-src="{{selectedevent.posters.detailed}}" />
+            </div>
+            <div class="col-sm-11" ng-show="selectedevent">
+                {{selectedevent.title }} -- {{selectedevent.runtime}} minutes<span class="badge pull-right">{{selectedevent.mpaa_rating}}</span><br />
+                {{selectedevent.synopsis }}
+            </div>{{selecteddate}}
+        </div>
+    </div>
+</div>
+<input type="button" ng-click="refreshrender=true" class="btn" value="refresh View" />
+<div mm-fullcalendar selectedday="selectedDay" refreshrender="refreshrender" itemssource="vm.events" selectedday="selectedDate" day-selected="calendarDayselected" selectedevent="selectedevent" start-param="release_dates" end-param="release_dates"></div>

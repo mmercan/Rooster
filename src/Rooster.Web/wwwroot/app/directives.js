@@ -7,18 +7,10 @@ angular.module('inspinia')
             restrict: 'A',
             link: function (scope, element) {
                 // Call metsi to build when user signup
-                scope.$watch('authentication.user', function () {
-                    $timeout(function () {
+                scope.$watch('authentication.user', function() {
+                    $timeout(function() {
                         element.metisMenu();
                     });
-
-
-                    var sidebar = element.parent();
-                    sidebar.slimScroll({
-                        height: '100%',
-                        railOpacity: 0.9,
-                    });
-
                 });
 
             }
